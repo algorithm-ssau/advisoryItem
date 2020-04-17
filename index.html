@@ -30,6 +30,61 @@
 	<li><a class="fNiv">О сайте</a></li>
 </ul>
 
+<div class="tab">
+  <button class="tablinks" onclick="ChooseCat(event, 'Cat1')" id="defaultChoose">Декоративно-лиственные</button>
+  <button class="tablinks" onclick="ChooseCat(event, 'Cat2')">Декоративно-цветущие</button>
+  <button class="tablinks" onclick="ChooseCat(event, 'Cat3')">Орхидеи</button>
+  <button class="tablinks" onclick="ChooseCat(event, 'Cat4')">Пальмы</button>
+  <button class="tablinks" onclick="ChooseCat(event, 'Cat5')">Кактусы и суккуленты</button>
+</div>
+
+<div id="Cat1" class="tabcontent">
+  <h3>Декоративно-лиственные</h3>
+  <p>Информация про первую категорию.</p>
+</div>
+
+<div id="Cat2" class="tabcontent">
+  <h3>Декоративно-цветущие</h3>
+  <p>Информация про вторую категорию.</p> 
+</div>
+
+<div id="Cat3" class="tabcontent">
+  <h3>Орхидеи</h3>
+  <p>Информация про третью категорию.</p>
+</div>
+
+<div id="Cat4" class="tabcontent">
+  <h3>Пальмы</h3>
+  <p>Информация про четвертную категорию.</p>
+</div>
+
+<div id="Cat5" class="tabcontent">
+  <h3>Кактусы и суккуленты</h3>
+  <p>Информация про пятую категорию.</p>
+</div>
+
+</div>
+
+
+
+<script>
+function ChooseCat(evt, CatName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(CatName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultChoose").click();
+</script>
 
 <script type="text/javascript" src="jquery/jquery.js"></script>
 <script type="text/javascript" src="jquery/jquery-ui.js"></script>
