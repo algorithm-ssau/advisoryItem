@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>la fleur</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./css/styles.css">	
+	<link rel="stylesheet" href="jquery/jMenu.jquery.css" type="text/css" />
+</head>
+<body>
+
+<div class="main"> 
+	<ul id="jMenu">
+	<li><a class="fNiv">Главная</a></li>	
+	
+	<li><a class="fNiv">Оранжерея</a>
+		<ul>
+			<li class="arrow"></li>
+			<li><a>Декоративно-лиственные</a></li>
+			<li><a>Декоративно-цветущие</a></li>
+			<li><a>Орхидеи</a></li>
+			<li><a>Пальмы</a></li>
+			<li><a>Кактусы и суккуленты</a></li>
+		</ul>
+	</li>
+		
+	<li><a class="fNiv">Подобрать цветок</a></li>	
+	
+	<li><a class="fNiv">Статьи</a></li>	
+	
+	<li><a class="fNiv">О сайте</a></li>
+</ul>
+
+
+<script type="text/javascript" src="jquery/jquery.js"></script>
+<script type="text/javascript" src="jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="jquery/jMenu.jquery.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#jMenu").jMenu();
+  })
+</script>
+
+
+</body>
+</html>
