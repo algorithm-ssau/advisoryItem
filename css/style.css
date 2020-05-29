@@ -1,5 +1,6 @@
 body {
 	background: #e2eaed;
+	background-image: url(../images/bg.png); 
 }
 
 .main {
@@ -82,6 +83,14 @@ body {
 .product:hover .product-photo img {
 	transform: scale(1.05);
 }	
+
+.bar {
+	width: 100px;
+	height: 100px;
+	margin: 0 10px 0 10px;
+	
+}
+
 
 /******************************
 ** стили меню с категориями **
