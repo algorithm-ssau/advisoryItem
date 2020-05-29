@@ -15,6 +15,22 @@ body {
 	z-index: 100;
 }
 
+h1, h3 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+h2, div button {
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+div button p {
+	padding: 0;
+	margin: 0;
+	text-align:center;
+	font-size: 14pt;
+}
+
 .btn {
 	text-decoration: none;
 }
